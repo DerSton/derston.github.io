@@ -10,4 +10,3 @@
 - HTML
 - css
 - wenig JAVA
-### [Mooncake Discord Bot](https://mooncakebot.github.io)

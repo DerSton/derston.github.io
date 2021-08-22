@@ -1,5 +1,5 @@
 #### Projekte
-1. [Crisp](https://github.com/CrispiCas), [Floschy](https://github.com/flloschy) und [ich](HAHAHAHAAHAH HIER CRISP)  arbeite gerade sehr stark am MooncakeBot für Discord. 
+1. [Crisp](https://github.com/CrispiCas), [Floschy](https://github.com/flloschy) und [ich](https://hierCrispBesser???.de)  arbeite gerade sehr stark am MooncakeBot für Discord. 
 2. Ich lerne die front end entwicklung mit HTML, css und Javascript
 3. Ich würde gerne C++ für Desktopanwendungen oder C# für spiele mit Unity lernen
 #### 

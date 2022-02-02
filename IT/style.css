@@ -9,8 +9,8 @@
 .maincontainer{
     width: 100vw;
     height: 100vh;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .absatz{
     padding-top: 20px;

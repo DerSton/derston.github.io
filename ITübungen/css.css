@@ -6,9 +6,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.maincontiner{
+.maincontainer{
     width: 100vw;
     height: 100vh;
     padding-left: 20%;
     padding-right: 20%;
+}
+.absatz{
+    padding-top: 20px;
 }

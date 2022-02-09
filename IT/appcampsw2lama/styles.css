@@ -5,38 +5,38 @@
 }
 
 .myClass1 {
-    width: 100%;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 40px;
-    color: indianred;
-    font-family: Lato, "sans serif";
-  }
-  
-  .myClass2 {
-    width: 100%;
-    font-weight: bold;
-    text-align: left;
-    font-size: 24px;
-    color: darkgray;
-  }
-  
-  .myClass3 {
-    text-align: center;
-    background-color: yellow;
-    padding: 10px;
-    margin: 5px;
-    font-size: 14px;
-    color: green;
-    font-family: "Comic Sans MS", Arial;
-  }
-  
-  #myID1 {
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    font-size: 50px;
-    color: indianred;
-    font-family: Lato, "sans serif";
-  }
+  width: 100%;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 40px;
+  color: indianred;
+  font-family: Lato, "sans serif";
+}
+
+.myClass2 {
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  font-size: 24px;
+  color: darkgray;
+}
+
+.myClass3 {
+  text-align: center;
+  background-color: yellow;
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+  color: green;
+  font-family: "Comic Sans MS", Arial;
+}
+
+#myID1 {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  color: indianred;
+  font-family: Lato, "sans serif";
+}
   

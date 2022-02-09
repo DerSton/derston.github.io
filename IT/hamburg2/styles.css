@@ -21,11 +21,14 @@
 .facts{
     background-image: url(https://abload.de/img/hamburgvyk99.jpg);
     width: 60vw;
-    min-width: 300px;
-    max-width: 1000px;
 
-    height: 20vh;
-    min-height: 150px;
-    max-height: 500px;
+    height: 50vh;
+
+    display: inline-flex;
+    text-align: center;
+}
+.fact{
+    color: white;
+    background-color: brown;
 
 }

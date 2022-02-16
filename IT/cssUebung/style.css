@@ -46,6 +46,12 @@ html, body {
     height: 100%; 
   }
   
+.row1{
+    display: flex;
+}
+.row2{
+    display: flex;
+}
   /* FOOTER NAVIGATION */
   
   nav {

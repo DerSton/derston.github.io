@@ -12,7 +12,7 @@ html, body {
     background-image: url('https://abload.de/img/bgvskt1.jpg');
     background-size: cover;
     margin: 0;
-    color: aliceblue;
+    color: rgb(70, 70, 70);
   }
   
   a {
@@ -54,37 +54,16 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-  /* FOOTER NAVIGATION */
-  
-  nav {
-    background-color: #FFF;
-  }
-  
-  nav li {
-    margin: 0;
-    padding: 0 10px;
-  }
-  
-  nav ul {
-  }
-  
-  .contact-button {
-  }
-  
-  .contact-button a {
-  }
-  
-  a:hover {
-  }
-  
-  nav a {
-    height: 60px;
-    line-height: 60px;
-    color: darkmagenta;
+/* FOOTER NAVIGATION */
+
+.link{
+    color:rgb(46, 122, 167);
+    font-size: 20px;
     text-decoration: none;
-  }
-  
-  
-  
-  
-  
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

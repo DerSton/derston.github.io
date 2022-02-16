@@ -57,9 +57,10 @@ html, body {
 /* FOOTER NAVIGATION */
 
 .link{
-    color:rgb(46, 122, 167);
-    font-size: 20px;
-    text-decoration: none;
+    color:rgb(175, 235, 217);
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .navbar{
     width: 100vw;

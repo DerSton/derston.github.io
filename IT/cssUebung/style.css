@@ -27,6 +27,7 @@ header{
   }
   
   .title {
+    color:brown;
     text-align: center;
     width: fit-content;
     background-color: white;
@@ -35,7 +36,9 @@ header{
   }
   
   .description {
-    padding: 30px;
+    padding-top: 10px;
+    color: black;
+    padding-bottom: 5px;
     text-align: center;
   }
   

@@ -26,6 +26,8 @@
     margin-left: 20vw;
     display: inline-flex;
     text-align: center;
+    object-fit: contain;
+    background-position: center; 
 }
 .fact{
     color: white;

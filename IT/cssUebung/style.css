@@ -34,13 +34,7 @@ header{
     font-size: 48px;
     font-weight: 700;
   }
-  
-  .description {
-    padding-top: 10px;
-    color: black;
-    padding-bottom: 5px;
-    text-align: center;
-  }
+
   
   .video-gallery {
     width: 100%;

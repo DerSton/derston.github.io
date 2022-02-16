@@ -32,7 +32,7 @@ html, body {
   }
   
   .video-gallery {
-  
+    display: block;
   }
   
   .video {

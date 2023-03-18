@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get It On</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial;
+        }
+        #timer{
+            color: white;
+            font-size: 5rem;
+            font-weight: bolder;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <section id="error" hidden>
+
+    </section>
+    <section id="redirect" hidden>
+        <div id="timer"></div>
+    </section>
+    <script>
+        const timer = document.getElementById("timer");
+        const errorSection = document.getElementById("error");
+        const redirectSection = document.getElementById("redirect");
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        timer.innerText = 3;
+
+        if (urlParams.get("url") == null){
+            // handle no URL error
+            errorSection.removeAttribute("hidden");
+        } else{
+            try {
+                new URL(urlParams.get("url"));
+                // handle no errors found
+                redirectSection.removeAttribute("hidden");
+                let timerInterval = setInterval(function(){
+                timer.innerText = timer.innerText - 1;
+                if (timer.innerText <= 0){
+                    clearInterval(timerInterval);
+                    if (urlParams.get("url") != null){
+                        document.location.href = urlParams.get("url");
+                    }
+                }
+        }, 1000)
+            }catch{
+                // handle invald URL error
+                errorSection.removeAttribute("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

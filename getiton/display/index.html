@@ -1,0 +1,76 @@
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .FrameBackground{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #7c7c7c;
+        border-width: 0.13rem;
+        height: 50px;
+        min-width: 200px;
+        cursor: pointer;
+    }
+    .TargetLogo{
+        position: absolute;
+        background-image: url(https://companieslogo.com/img/orig/AMZN-e9f942e4.png?t=1632523695);
+        height: 65%;
+        top: 50%;
+        left: 6%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        aspect-ratio: 1;
+        transform: translate(0, -50%);
+    }
+    .TextContainer{
+        display: flex;
+        flex-direction: column;
+        position: inherit;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 90%;
+        left: 26%;
+        overflow: hidden;
+        letter-spacing: 1px;
+    }
+    .TargetText{
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .GetItOn{
+        color: white;
+        font-size: 0.9rem;
+    }
+    .InfoButton{
+        font-size: 0.8rem;
+        position: absolute;
+        color: #858585;
+        right: 4px;
+        top: 4px;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<div class="FrameBackground" onclick="redicrectToTarget()">
+    <div class="TargetLogo"></div>
+    <div class="TextContainer">
+        <div class="GetItOn">Shop on</div>
+        <div class="TargetText">Amazon</div>
+    </div>
+    <div hidden class="InfoButton" onclick="moreInfo()"><i class="bi bi-info-circle InfoButton"></i></div>
+</div>
+<script>
+    // redirect to Target
+    function redicrectToTarget(event){
+        window.top.location.href = "/getiton/redirect?target="
+    }
+    function moreInfo(){
+        console.log("sdf")
+    }
+</script>

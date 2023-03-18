@@ -1,0 +1,118 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#brandLogo{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/1200px-Netflix_2015_N_logo.svg.png);
+}
+
+.FrameBackground{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7c7c7c;
+    border-width: 0.13rem;
+    height: 50px;
+    min-width: 200px;
+    cursor: pointer;
+}
+.TargetLogo{
+    position: absolute;
+    background-image: url(https://companieslogo.com/img/orig/AMZN-e9f942e4.png?t=1632523695);
+    height: 65%;
+    top: 50%;
+    left: 6%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    transform: translate(0, -50%);
+}
+.TextContainer{
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 90%;
+    left: 26%;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+.TargetText{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.GetItOn{
+    color: white;
+    font-size: 0.9rem;
+}
+.InfoButton{
+    font-size: 0.8rem;
+    position: absolute;
+    color: #858585;
+    right: 4px;
+    top: 4px;
+}
+
+/* mainFrame */
+#mainFrame.type1{
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 0.13rem;
+    height: 30px;
+}
+#mainFrame.size1.type1{
+    width: 150px;
+}
+#mainFrame.size2.type1{
+    width: 200px;
+}
+
+/* textContainer */
+#mainFrame.type1 > #textContainer{
+}
+
+/* brandLogo */
+#mainFrame.type1 > #brandLogo{
+    height: 20px;
+    aspect-ratio: 1;
+
+    position: absolute;
+    top: calc(5px + 0.13rem);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#mainFrame.type1.size1 > #brandLogo{
+    left: calc(150px + 0.13rem);
+    transform: translate(calc(-100% - 5px), 0);
+}
+#mainFrame.type1.size2 > #brandLogo{
+    left: calc(200px + 0.13rem);
+    transform: translate(calc(-100% - 5px), 0);
+}
+
+/* getText */
+#mainFrame.type1 > #textContainer > #getText{
+    color: inherit;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    font-weight: 600;
+    position: absolute;
+    top: calc(7px + 0.13rem);
+    left: calc(7px + 0.13rem);
+}
+
+/* brandText */
+#mainFrame.type1 > #textContainer > #brandText{
+    visibility: hidden;
+}

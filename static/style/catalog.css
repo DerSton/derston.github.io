@@ -1,0 +1,39 @@
+#selectCatalog.container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#displayCatalog.container>div>h3 {
+    background-color: white;
+    padding: 8px 0;
+    border: 0;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: #000000de;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.answer {
+    padding-left: 15px;
+}
+
+.answer.correct {
+    color: green;
+}
+
+.answer.wrong {
+    color: red;
+}
+
+#displayCatalog.container>div>div:not(:last-child) {
+    border: 0;
+    border-bottom: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #00000099;
+}

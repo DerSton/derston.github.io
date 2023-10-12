@@ -1,4 +1,4 @@
-body>.container>a:first-child {
+body>.container>a:not(:last-child) {
     margin-bottom: 8px;
 }
 

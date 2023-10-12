@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NYHDYVRY0G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NYHDYVRY0G');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="/static/style/default.css">
+    <link rel="stylesheet" href="/static/style/training.css">
+    <script src="/static/scripts/training.js"></script>
+    <title>Training</title>
+</head>
+<body>
+    <div class="page_head">
+        <a href="/information"><i class="fa-solid fa-square-info"></i></a>
+        <div class="title">
+            <img src="/static/thw-logo.png" alt="">
+            Grundi
+        </div>
+        <div class="subtitle"></div>
+    </div>
+    <div class="container" name="setup">
+        <form class="ui form initial">
+            <div class="field">
+                <label>Fragenkatalog</label>
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="katalog">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Katalog</div>
+                    <div class="menu" id="selectCatalogMenu">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Abschnitte</label>
+                <select multiple="" class="ui selection dropdown" name="abschnitte" id="selectSectionMenu">
+                    <option value="">Abschnitte auswählen</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Zufällige Reihenfolge</label>
+                <div class="fields">
+                    <div class="field">
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden">
+                                <label>Abschnitte</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden">
+                                <label>Fragen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" class="hidden">
+                                <label>Antworten</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="ui primary button" type="submit">Bestätigen</button>
+        </form>
+        <a class="ui primary button" href="/" style="position: fixed;left: 20px;bottom: 20px;">Zurück</a>
+    </div>
+    <div class="container" name="quiz" style="display: none;">
+        <form class="ui form">
+            <div class="question">Welches Gesetz regelt die Mitwirkung der Bundesanstalt THW im erweiterten Katastrophenschutz?</div>
+            <div class="field">
+                <div class="inline field">
+                    <div class="ui checkbox" name="answer1">
+                        <input type="checkbox" class="hidden">
+                        <label>Grundgesetz</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="inline field">
+                    <div class="ui checkbox" name="answer2">
+                        <input type="checkbox" class="hidden">
+                        <label>Zivilschutz- und Katastrophenhilfegesetz (ZSKG)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="inline field">
+                    <div class="ui checkbox" name="answer3">
+                        <input type="checkbox" class="hidden">
+                        <label>THW-Gesetz</label>
+                    </div>
+                </div>
+            </div>
+            <div class="button"><a class="ui primary button">Auswerten</button></a>
+        </form>
+        <a class="ui primary button" href="/training" style="position: fixed;left: 20px;bottom: 20px;">Zurück</a>
+    </div>
+</body>
+</html>

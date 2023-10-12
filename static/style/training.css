@@ -1,0 +1,14 @@
+.container[name="setup"]>form>.button {
+    width: 100%;
+}
+
+.container[name="quiz"]>form>.question {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.container[name="quiz"]>form>.button>a {
+    margin-top: 20px;
+    width: 100%;
+}

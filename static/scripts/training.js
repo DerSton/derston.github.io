@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function resetQuestion() {
+    document.getElementById("correctness").style.display = "none";
     document.querySelector("div[name='answer1']>label").style.color = "";
     document.querySelector("div[name='answer2']>label").style.color = "";
     document.querySelector("div[name='answer3']>label").style.color = "";
@@ -104,22 +105,26 @@ function displayQuestion(section, question, quiz) {
     document.querySelector("div[name='answer1']>label").innerHTML = questi.antworten[0].answer
     document.querySelector("div[name='answer2']>label").innerHTML = questi.antworten[1].answer
     document.querySelector("div[name='answer3']>label").innerHTML = questi.antworten[2].answer
-    
+
     document.querySelector(".container[name='quiz']>form>.button").innerHTML = `<a class="ui primary button" onclick='auflösen(${section}, ${question}, ${JSON.stringify(quiz)})'>Auflösen</a>`
 }
 
 function auflösen(section, question, quiz) {
     questi = quiz[Object.keys(quiz)[section]][question]
-    console.log(questi)
     document.querySelector("div[name='answer1']>label").style.color = questi.antworten[0].correct ? "green" : "red"
     document.querySelector("div[name='answer2']>label").style.color = questi.antworten[1].correct ? "green" : "red"
     document.querySelector("div[name='answer3']>label").style.color = questi.antworten[2].correct ? "green" : "red"
-    
+
+    let correctness = document.querySelector("div[name='answer1']>input").checked === questi.antworten[0].correct && document.querySelector("div[name='answer2']>input").checked === questi.antworten[1].correct && document.querySelector("div[name='answer3']>input").checked === questi.antworten[2].correct;
+    document.getElementById("correctness").style.display = "";
+    document.getElementById("correctness").style.color = correctness ? "green" : "red";
+    document.getElementById("correctness").textContent = correctness ? "Richtig!!" : "Falsch";
+
     let command;
-    if (quiz[Object.keys(quiz)[section]].length > question+1) {
-        command = `displayQuestion(${section}, ${question+1}, ${JSON.stringify(quiz)})`
-    } else if (quiz[Object.keys(quiz)[section]].length <= question+1 && Object.keys(quiz).length > section+1) {
-        command = `displayQuestion(${section+1}, 0, ${JSON.stringify(quiz)})`
+    if (quiz[Object.keys(quiz)[section]].length > question + 1) {
+        command = `displayQuestion(${section}, ${question + 1}, ${JSON.stringify(quiz)})`
+    } else if (quiz[Object.keys(quiz)[section]].length <= question + 1 && Object.keys(quiz).length > section + 1) {
+        command = `displayQuestion(${section + 1}, 0, ${JSON.stringify(quiz)})`
     } else {
         command = "location.reload(true);"
     }

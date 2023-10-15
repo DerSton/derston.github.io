@@ -12,3 +12,8 @@
     margin-top: 20px;
     width: 100%;
 }
+
+#correctness{
+    margin-top: 20px;
+    font-weight: bold;
+}

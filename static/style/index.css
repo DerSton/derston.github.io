@@ -1,7 +1,0 @@
-body>.container>a:not(:last-child) {
-    margin-bottom: 8px;
-}
-
-body>.container>a {
-    width: 100%;
-}
